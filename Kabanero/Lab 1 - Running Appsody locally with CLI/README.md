@@ -57,7 +57,7 @@ It will start to pull and populate application code needed to run the applicatio
 
 ![3](images/3.png)
 
-* *** test.js *** :- Contains application test code 
+* ** test.js ** :- Contains application test code 
 * *** .appsody-config.yaml *** :- Contains configuration of your appsody stack
 * *** .gitignore *** :- files to be ignored while pushing to git
 * *** app.js *** :- Entry point of your application, where developer needs to write his buisness logic 
