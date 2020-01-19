@@ -25,4 +25,21 @@ A core component of Appsody is a set of pre-configured stacks and templates for 
 13. stack       Tools to help create and test Appsody stacks
 14. stop        Stop the local, running Appsody container.
 15. test        Test your project in the local Appsody environment.
-16. version     Show the version of the Appsody CLI.
+16. version     Show the version of the Appsody CLI
+
+### Running a sample Nodejs application locally through Appsody CLI
+
+Appsody CLI will allow developers to pull pre built nodejs template created by application Architect, developer uses this template as a boilerplate to build on top of it. Appsody templates created by application architect will allow the developers to focus only buisness logic rather than worrying about others aspect of the application like logging, metering, load testing, and etc. Another name for these templates are called collections
+
+1. Create a new directory and navigate to it
+```
+$ mkdir nodejs
+$ cd nodejs
+```
+
+2. List down collections
+```
+$ appsody list
+```
+
+![Alt text](images/1.PNG)
