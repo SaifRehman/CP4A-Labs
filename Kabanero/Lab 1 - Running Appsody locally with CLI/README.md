@@ -42,4 +42,4 @@ $ cd nodejs
 $ appsody list
 ```
 
-![Alt text](images/1.PNG)
+![Alt text](images/1.png)
