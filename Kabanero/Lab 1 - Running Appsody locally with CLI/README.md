@@ -10,22 +10,22 @@ A core component of Appsody is a set of pre-configured stacks and templates for 
 
 ### All commands for appsody 
 
-1. build       Build a local container image of your Appsody project.
-2. completion  Generates bash tab completions
-3. debug       Debug your Appsody project.
-4. deploy      Build and deploy your Appsody project to Kubernetes.
-5. extract     Extract your Appsody project to a local directory.
-6. help        Help about any command
-7. init        Initialize an Appsody project.
-8. list        List the available Appsody stacks.
-9. operator    Install or uninstall the Appsody operator from your Kubernetes cluster.
-10. ps          List the Appsody containers running in the local Docker environment.
-11. repo        Manage your Appsody repositories
-12. run         Run your Appsody project in a containerized development environment.
-13. stack       Tools to help create and test Appsody stacks
-14. stop        Stop the local, running Appsody container.
-15. test        Test your project in the local Appsody environment.
-16. version     Show the version of the Appsody CLI
+1. ```build```       Build a local container image of your Appsody project.
+2. ```completion```  Generates bash tab completions
+3. ```debug```       Debug your Appsody project.
+4. ```deploy```      Build and deploy your Appsody project to Kubernetes.
+5. ```extract```     Extract your Appsody project to a local directory.
+6. ```help```        Help about any command
+7. ```init```        Initialize an Appsody project.
+8. ```list```        List the available Appsody stacks.
+9. ```operator```    Install or uninstall the Appsody operator from your Kubernetes cluster.
+10. ```ps```          List the Appsody containers running in the local Docker environment.
+11. ```repo```        Manage your Appsody repositories
+12. ```run```        Run your Appsody project in a containerized development environment.
+13. ```stack```       Tools to help create and test Appsody stacks
+14. ```stop```        Stop the local, running Appsody container.
+15. ```test```        Test your project in the local Appsody environment.
+16. ```version```     Show the version of the Appsody CLI
 
 ### Running a sample Nodejs application locally through Appsody CLI
 
