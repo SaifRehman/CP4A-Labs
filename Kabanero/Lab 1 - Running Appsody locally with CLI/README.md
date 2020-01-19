@@ -42,4 +42,35 @@ $ cd nodejs
 $ appsody list
 ```
 
-![Alt text](images/1.png)
+![1](images/1.png)
+
+These are avaiable collections available for developers to use
+
+3. Create a sample nodejs express app
+
+```
+$ appsody init nodejs-express
+```
+![2](images/2.png)
+
+It will start to pull and populate application code needed to run the application. Once you have executed the command above you will sucessfully be able to see this folder structure 
+
+![3](images/3.png)
+
+* *** test.js *** :- Contains application test code 
+* *** .appsody-config.yaml *** :- Contains configuration of your appsody stack
+* *** .gitignore *** :- files to be ignored while pushing to git
+* *** app.js *** :- Entry point of your application, where developer needs to write his buisness logic 
+* *** package.json *** :- Includes application dependencies
+
+4. Run the application locally
+
+```
+$ appsody run 
+```
+
+![4](images/4.png)
+
+Runs the application locally as a container in your machine. Appsody also support hot reloading. Example, whenever you change your code, it will rebuild and run your application code again. Let us see the following in the later steps.
+
+5. 
