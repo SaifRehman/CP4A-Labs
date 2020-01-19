@@ -73,4 +73,35 @@ $ appsody run
 
 Runs the application locally as a container in your machine. Appsody also support hot reloading. Example, whenever you change your code, it will rebuild and run your application code again. Let us see the following in the later steps.
 
-5. 
+5. Navigate to ``` localhost:3000 ``` to preview your application 
+
+![5](images/5.png)
+
+6. Lets add a new endpoint. This Endpoint will be a GET request that will get a square of an integer specified in a URL parameter. Example request would look like this 
+```
+$ curl http://localhost:3000/square/2
+```
+
+Add the following line of code after line 10 in app.js
+
+```JavaScript
+  app.get('/square/:id', (req, res) => {
+    req.log.info({square: 'Calculating sqaure root'});
+    const square = (req.params.id * req.params.id).toString()
+    res.send(square);
+  });
+```
+
+7. Refresh the page and try several combination 
+
+```
+$ http://localhost:3000/square/2
+$ http://localhost:3000/square/43
+$ http://localhost:3000/square/23
+$ http://localhost:3000/square/8
+$ http://localhost:3000/square/67
+```
+
+![6](images/6.png)
+
+

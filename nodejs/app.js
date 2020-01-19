@@ -9,5 +9,11 @@ module.exports = (/*options*/) => {
     res.send('Hello from Appsody!');
   });
 
+  app.get('/square/:id', (req, res) => {
+    req.log.info({square: 'Calculating sqaure root'});
+    const square = (req.params.id * req.params.id).toString()
+    res.send(square);
+  });
+
   return app;
 };
