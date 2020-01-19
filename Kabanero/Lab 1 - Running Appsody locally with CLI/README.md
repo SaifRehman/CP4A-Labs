@@ -1,4 +1,4 @@
-## What is Appsody
+## What is Appsody?
 
 Appsody is an open source project that includes a set of tools and capabilities you can use to build cloud-native applications.
 
