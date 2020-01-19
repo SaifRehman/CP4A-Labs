@@ -57,3 +57,7 @@ Follow these steps:
 ```
 $ sudo yum install <path>/appsody-v.r.m-1.x86_64.rpm
 ```
+
+### Install Docker 
+
+Follow the instruction on this [link](https://docs.docker.com/install/) to install Docker
