@@ -105,3 +105,12 @@ $ http://localhost:3000/square/67
 ![6](images/6.png)
 
 
+8. Application monitoring and logging endpoints
+- Application endpoint: http://localhost:3000/
+- Health endpoint: http://localhost:3000/health
+- Liveness endpoint: http://localhost:3000/live
+- Readiness endpoint: http://localhost:3000/ready
+- Metrics endpoint: http://localhost:3000/metrics
+- Dashboard endpoint: http://localhost:3000/appmetrics-dash (development only)
+
+![7](images/7.png)
