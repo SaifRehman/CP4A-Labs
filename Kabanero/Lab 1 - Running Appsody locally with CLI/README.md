@@ -73,33 +73,38 @@ Runs the application locally as a container in your machine. Appsody also suppor
 
 ![5](images/5.png)
 
-<!-- 6. Lets add a new endpoint. This Endpoint will be a GET request that will get a square of an integer specified in a URL parameter. Example request would look like this 
+6. Lets add a new endpoint. This Endpoint will be a GET request that will output helloworld
 ```
-$ curl http://localhost:3000/square/2
+$ curl http://localhost:9080/starter/hello
+```
+Create a new file under ``` src/main/java/dev/appsody/starter ``` , name it as ``` StarterHello.java ```
+
+Add the following line of code in the file created
+
+```Java
+package dev.appsody.starter;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+
+@Path("/hello")
+public class StarterHello {
+
+    @GET
+    public String getRequestHello() {
+        return "Hello World";
+    }
+}
 ```
 
-Add the following line of code after line 10 in app.js
+Here you will see thar you have generated a new endpint 
 
-```JavaScript
-  app.get('/square/:id', (req, res) => {
-    req.log.info({square: 'Calculating sqaure root'});
-    const square = (req.params.id * req.params.id).toString()
-    res.send(square);
-  });
-```
+![6](images/6.png)
 
-7. Refresh the page and try several combination 
+You will also notice that api documention will also be created for your new endpoint
 
-```
-$ http://localhost:3000/square/2
-$ http://localhost:3000/square/43
-$ http://localhost:3000/square/23
-$ http://localhost:3000/square/8
-$ http://localhost:3000/square/67
-``` -->
-
-<!-- ![6](images/6.png) -->
-
+![7](images/7.png)
 
 8. Application monitoring and logging endpoints
 - Application endpoint: http://localhost:9080/
@@ -110,4 +115,3 @@ $ http://localhost:3000/square/67
 - OpenAPI Endpoint : http://localhost:9080/openapi 
 - Swagger UI endpoint: http://localhost:9080/openapi/ui
 
-![7](images/7.png)

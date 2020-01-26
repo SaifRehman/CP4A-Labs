@@ -11,3 +11,13 @@ public class StarterResource {
         return "StarterResource response";
     }
 }
+
+
+// @Path("/hello")
+// public class StarterResource {
+
+//     @GET
+//     public String getRequestHello() {
+//         return "Hello World";
+//     }
+// }
