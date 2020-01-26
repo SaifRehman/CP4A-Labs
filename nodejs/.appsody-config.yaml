@@ -1,2 +1,0 @@
-project-name: nodejs
-stack: docker.io/appsody/nodejs-express:0.4
