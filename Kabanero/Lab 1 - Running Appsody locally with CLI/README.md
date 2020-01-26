@@ -115,3 +115,8 @@ You will also notice that api documention will also be created for your new endp
 - OpenAPI Endpoint : http://localhost:9080/openapi 
 - Swagger UI endpoint: http://localhost:9080/openapi/ui
 
+9. To stop to local developmnet server
+
+```
+$ appsody stop
+```
