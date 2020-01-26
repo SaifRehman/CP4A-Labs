@@ -33,8 +33,8 @@ Appsody CLI will allow developers to pull pre built nodejs template created by a
 
 1. Create a new directory and navigate to it
 ```
-$ mkdir nodejs
-$ cd nodejs
+$ mkdir openliberty
+$ cd openliberty
 ```
 
 2. List down collections
@@ -46,10 +46,10 @@ $ appsody list
 
 These are avaiable collections available for developers to use
 
-3. Create a sample nodejs express app
+3. Create a sample openliberty app
 
 ```
-$ appsody init nodejs-express
+$ appsody init java-openliberty
 ```
 ![2](images/2.png)
 
@@ -57,11 +57,7 @@ It will start to pull and populate application code needed to run the applicatio
 
 ![3](images/3.png)
 
-* **test.js** :- Contains application test code 
-* **.appsody-config.yaml** :- Contains configuration of your appsody stack
-* **.gitignore** :- files to be ignored while pushing to git
-* **app.js** :- Entry point of your application, where developer needs to write his buisness logic 
-* **package.json** :- Includes application dependencies
+
 
 4. Run the application locally
 
@@ -73,11 +69,11 @@ $ appsody run
 
 Runs the application locally as a container in your machine. Appsody also support hot reloading. Example, whenever you change your code, it will rebuild and run your application code again. Let us see the following in the later steps.
 
-5. Navigate to ``` localhost:3000 ``` to preview your application 
+5. Navigate to ``` localhost:9080 ``` to preview your application 
 
 ![5](images/5.png)
 
-6. Lets add a new endpoint. This Endpoint will be a GET request that will get a square of an integer specified in a URL parameter. Example request would look like this 
+<!-- 6. Lets add a new endpoint. This Endpoint will be a GET request that will get a square of an integer specified in a URL parameter. Example request would look like this 
 ```
 $ curl http://localhost:3000/square/2
 ```
@@ -100,17 +96,18 @@ $ http://localhost:3000/square/43
 $ http://localhost:3000/square/23
 $ http://localhost:3000/square/8
 $ http://localhost:3000/square/67
-```
+``` -->
 
-![6](images/6.png)
+<!-- ![6](images/6.png) -->
 
 
 8. Application monitoring and logging endpoints
-- Application endpoint: http://localhost:3000/
-- Health endpoint: http://localhost:3000/health
+- Application endpoint: http://localhost:9080/
+- Health endpoint: http://localhost:9080/health/ready
 - Liveness endpoint: http://localhost:3000/live
 - Readiness endpoint: http://localhost:3000/ready
-- Metrics endpoint: http://localhost:3000/metrics
-- Dashboard endpoint: http://localhost:3000/appmetrics-dash (development only)
+- Metrics endpoint: http://localhost:3000/metrics (Login as username:admin  password adminpwd)
+- OpenAPI Endpoint : http://localhost:9080/openapi 
+- Swagger UI endpoint: http://localhost:9080/openapi/ui
 
 ![7](images/7.png)
