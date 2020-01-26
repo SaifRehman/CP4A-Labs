@@ -1,0 +1,4 @@
+dev/appsody/starter/StarterResource.class
+dev/appsody/starter/health/StarterLivenessCheck.class
+dev/appsody/starter/StarterApplication.class
+dev/appsody/starter/health/StarterReadinessCheck.class

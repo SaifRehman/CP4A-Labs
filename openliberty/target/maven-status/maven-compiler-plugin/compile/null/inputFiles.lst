@@ -1,0 +1,4 @@
+/project/user-app/src/main/java/dev/appsody/starter/health/StarterReadinessCheck.java
+/project/user-app/src/main/java/dev/appsody/starter/StarterApplication.java
+/project/user-app/src/main/java/dev/appsody/starter/StarterResource.java
+/project/user-app/src/main/java/dev/appsody/starter/health/StarterLivenessCheck.java
